@@ -16,14 +16,7 @@
     "url": "https://github.com/cstegeman//fe-knowledge-sharing/issues"
   },
   "homepage": "https://github.com/cstegeman//fe-knowledge-sharing#readme",
-  "dependencies": {
-    "base.css": "^1.0.0",
-    "flex.css": "^1.1.7",
-    "flex.scss": "^1.0.1",
-    "grid.css": "^0.6.1",
-    "normalize.css": "^8.0.1",
-    "normalize.scss": "^0.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
   }
