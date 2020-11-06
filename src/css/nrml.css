@@ -1,0 +1,12 @@
+/* Base */
+/* This is the collection of all base element styling */
+/** {*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*}*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

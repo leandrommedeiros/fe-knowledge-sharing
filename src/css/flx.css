@@ -1,0 +1,469 @@
+/*
+@param {String} $type
+@param {String} $breakpoint [null]
+@param {String} $modifier [null]
+*/
+/*
+GENERATE FLEX CONTAINER PROPERTIES
+*/
+/*
+@param {String} $breakpoint [null]
+@param {String} $property [null]
+@param {String} $value [null]
+*/
+/*
+GENERATE FLEX ITEM PROPERTIES
+*/
+/*
+@param {String} $breakpoint [null]
+@param {String} $property [null]
+@param {String} $value [null]
+*/
+/*
+GENERATE GAPS BETWEEN UNITS
+*/
+/*
+@param {String} $breakpoint
+@param {String} $gap
+@param {String} $modifier [null]
+*/
+/*
+@param {String} $breakpoint
+@param {String} $gap
+@param {String} $modifier [null]
+*/
+[class*="flex-container"] {
+  display: flex;
+}
+
+.flex-container--full-height {
+  height: 100%;
+}
+
+.flex-container--full-width {
+  width: 100%;
+}
+
+/*
+GENERATE FLEX CONTAINER PROPERTIES
+*/
+[class*='flex-container--flex-direction--column'] {
+  flex-direction: column;
+}
+
+[class*='flex-container--flex-wrap--wrap'] {
+  flex-wrap: wrap;
+}
+
+[class*='flex-container--justify-content--flex-end'] {
+  justify-content: flex-end;
+}
+
+[class*='flex-container--justify-content--flex-start'] {
+  justify-content: flex-start;
+}
+
+[class*='flex-container--justify-content--space-between'] {
+  justify-content: space-between;
+}
+
+[class*='flex-container--align-items--center'] {
+  align-items: center;
+}
+
+[class*='flex-container--align-items--baseline'] {
+  align-items: baseline;
+}
+
+[class*='flex-container--align-items--start'] {
+  align-items: start;
+}
+
+[class*='flex-container--justify-content--center'] {
+  justify-content: center;
+}
+
+[class*='flex-container--align-items--flex-end'] {
+  align-items: flex-end;
+}
+
+/*
+GENERATE FLEX UNIT PROPERTIES
+*/
+[class*='flex-unit--flex--1-1-auto'] {
+  flex: 1 1 auto;
+}
+
+[class*='flex-unit--flex--0-0-auto'] {
+  flex: 0 0 auto;
+}
+
+[class*='flex-unit--flex--1-0-auto'] {
+  flex: 1 0 auto;
+}
+
+[class*='flex-unit--flex--1-1-0'] {
+  flex: 1 1 0;
+}
+
+[class*='flex-unit--flex--2-1-0'] {
+  flex: 2 1 0;
+}
+
+[class*='flex-unit--flex--0-0-size-13'] {
+  flex: 0 0 5.2rem;
+}
+
+[class*='flex-unit--flex--1-1-100%'] {
+  flex: 1 1 100%;
+}
+
+[class*='flex-unit--align-self--center'] {
+  align-self: center;
+}
+
+[class*='flex-unit--align-self--flex-end'] {
+  align-self: flex-end;
+}
+
+[class*='flex-unit--align-self--stretch'] {
+  align-self: stretch;
+}
+
+[class*='flex-unit--overflow--scroll'] {
+  overflow: scroll;
+}
+
+[class*='flex-unit--overflow--no-wrap'] {
+  min-width: 0;
+}
+
+[class*='flex-unit--order--0'] {
+  order: 0;
+}
+
+[class*='flex-unit--order--1'] {
+  order: 1;
+}
+
+[class*='flex-unit--order--2'] {
+  order: 2;
+}
+
+[class*='flex-unit--flex-direction--column'] {
+  flex-direction: column;
+}
+
+/**
+ * $size - number in pixels, eg. 541px
+ */
+/**
+ * $size - number in pixels, eg. 541px
+ */
+/* Do not use the $size-x variables directly in partials, use to create specific variables instead */
+/* Use for paddings and margins */
+/* Use for widths on elements */
+/* Use for (min-)heights on elements */
+/* The maximum size for the layout */
+/* Do not use the $size-x variables directly in partials, use to create specific variables instead */
+/* Use for paddings and margins */
+/* Use for widths on elements */
+/* Use for (min-)heights on elements */
+/**
+@param {String} $property [null]
+@param {String} $value [null]
+ */
+/*
+@param {String} $type
+@param {String} $breakpoint [null]
+@param {String} $modifier [null]
+*/
+/*
+GENERATE FLEX CONTAINER PROPERTIES
+*/
+/*
+@param {String} $breakpoint [null]
+@param {String} $property [null]
+@param {String} $value [null]
+*/
+/*
+GENERATE FLEX ITEM PROPERTIES
+*/
+/*
+@param {String} $breakpoint [null]
+@param {String} $property [null]
+@param {String} $value [null]
+*/
+/*
+GENERATE GAPS BETWEEN UNITS
+*/
+/*
+@param {String} $breakpoint
+@param {String} $gap
+@param {String} $modifier [null]
+*/
+/*
+@param {String} $breakpoint
+@param {String} $gap
+@param {String} $modifier [null]
+*/
+/*
+GENERATE GAPS BETWEEN UNITS
+*/
+.flex-container-xs--gap-2--x {
+  margin-right: -0.4rem;
+  margin-left: -0.4rem;
+}
+
+.flex-container-xs--gap-2--x > [class*='flex-unit'] {
+  padding: 0 0.4rem;
+}
+
+.flex-container-xs--gap-3--x {
+  margin-right: -0.6rem;
+  margin-left: -0.6rem;
+}
+
+.flex-container-xs--gap-3--x > [class*='flex-unit'] {
+  padding: 0 0.6rem;
+}
+
+.flex-container-xs--gap-4--x {
+  margin-right: -0.8rem;
+  margin-left: -0.8rem;
+}
+
+.flex-container-xs--gap-4--x > [class*='flex-unit'] {
+  padding: 0 0.8rem;
+}
+
+.flex-container-xs--gap-6--x {
+  margin-right: -1.2rem;
+  margin-left: -1.2rem;
+}
+
+.flex-container-xs--gap-6--x > [class*='flex-unit'] {
+  padding: 0 1.2rem;
+}
+
+.flex-container-xs--gap-0--y {
+  margin-top: 0;
+}
+
+.flex-container-xs--gap-0--y > [class*='flex-unit'] {
+  margin-top: 0;
+}
+
+.flex-container-xs--gap-2--y {
+  margin-top: -0.8rem;
+}
+
+.flex-container-xs--gap-2--y > [class*='flex-unit'] {
+  margin-top: 0.8rem;
+}
+
+.flex-container-xs--gap-3--y {
+  margin-top: -1.2rem;
+}
+
+.flex-container-xs--gap-3--y > [class*='flex-unit'] {
+  margin-top: 1.2rem;
+}
+
+.flex-container-xs--gap-3--y {
+  margin-top: -1.2rem;
+}
+
+.flex-container-xs--gap-3--y > [class*='flex-unit'] {
+  margin-top: 1.2rem;
+}
+
+.flex-container-xs--gap-4--y {
+  margin-top: -1.6rem;
+}
+
+.flex-container-xs--gap-4--y > [class*='flex-unit'] {
+  margin-top: 1.6rem;
+}
+
+.flex-container-xs--gap-5--y {
+  margin-top: -2rem;
+}
+
+.flex-container-xs--gap-5--y > [class*='flex-unit'] {
+  margin-top: 2rem;
+}
+
+[class*='flex-unit-xs--order--0'] {
+  order: 0;
+}
+
+[class*='flex-unit-xs--order--1'] {
+  order: 1;
+}
+
+[class*='flex-unit-xs--order--2'] {
+  order: 2;
+}
+
+/**
+ * $size - number in pixels, eg. 541px
+ */
+/**
+ * $size - number in pixels, eg. 541px
+ */
+/* Do not use the $size-x variables directly in partials, use to create specific variables instead */
+/* Use for paddings and margins */
+/* Use for widths on elements */
+/* Use for (min-)heights on elements */
+/* The maximum size for the layout */
+/* Do not use the $size-x variables directly in partials, use to create specific variables instead */
+/* Use for paddings and margins */
+/* Use for widths on elements */
+/* Use for (min-)heights on elements */
+/**
+@param {String} $property [null]
+@param {String} $value [null]
+ */
+/*
+@param {String} $type
+@param {String} $breakpoint [null]
+@param {String} $modifier [null]
+*/
+/*
+GENERATE FLEX CONTAINER PROPERTIES
+*/
+/*
+@param {String} $breakpoint [null]
+@param {String} $property [null]
+@param {String} $value [null]
+*/
+/*
+GENERATE FLEX ITEM PROPERTIES
+*/
+/*
+@param {String} $breakpoint [null]
+@param {String} $property [null]
+@param {String} $value [null]
+*/
+/*
+GENERATE GAPS BETWEEN UNITS
+*/
+/*
+@param {String} $breakpoint
+@param {String} $gap
+@param {String} $modifier [null]
+*/
+/*
+@param {String} $breakpoint
+@param {String} $gap
+@param {String} $modifier [null]
+*/
+
+/**
+ * $size - number in pixels, eg. 541px
+ */
+/**
+ * $size - number in pixels, eg. 541px
+ */
+/* Do not use the $size-x variables directly in partials, use to create specific variables instead */
+/* Use for paddings and margins */
+/* Use for widths on elements */
+/* Use for (min-)heights on elements */
+/* The maximum size for the layout */
+/* Do not use the $size-x variables directly in partials, use to create specific variables instead */
+/* Use for paddings and margins */
+/* Use for widths on elements */
+/* Use for (min-)heights on elements */
+/**
+@param {String} $property [null]
+@param {String} $value [null]
+ */
+/*
+@param {String} $type
+@param {String} $breakpoint [null]
+@param {String} $modifier [null]
+*/
+/*
+GENERATE FLEX CONTAINER PROPERTIES
+*/
+/*
+@param {String} $breakpoint [null]
+@param {String} $property [null]
+@param {String} $value [null]
+*/
+/*
+GENERATE FLEX ITEM PROPERTIES
+*/
+/*
+@param {String} $breakpoint [null]
+@param {String} $property [null]
+@param {String} $value [null]
+*/
+/*
+GENERATE GAPS BETWEEN UNITS
+*/
+/*
+@param {String} $breakpoint
+@param {String} $gap
+@param {String} $modifier [null]
+*/
+/*
+@param {String} $breakpoint
+@param {String} $gap
+@param {String} $modifier [null]
+*/
+
+/**
+ * $size - number in pixels, eg. 541px
+ */
+/**
+ * $size - number in pixels, eg. 541px
+ */
+/* Do not use the $size-x variables directly in partials, use to create specific variables instead */
+/* Use for paddings and margins */
+/* Use for widths on elements */
+/* Use for (min-)heights on elements */
+/* The maximum size for the layout */
+/* Do not use the $size-x variables directly in partials, use to create specific variables instead */
+/* Use for paddings and margins */
+/* Use for widths on elements */
+/* Use for (min-)heights on elements */
+/**
+@param {String} $property [null]
+@param {String} $value [null]
+ */
+/*
+@param {String} $type
+@param {String} $breakpoint [null]
+@param {String} $modifier [null]
+*/
+/*
+GENERATE FLEX CONTAINER PROPERTIES
+*/
+/*
+@param {String} $breakpoint [null]
+@param {String} $property [null]
+@param {String} $value [null]
+*/
+/*
+GENERATE FLEX ITEM PROPERTIES
+*/
+/*
+@param {String} $breakpoint [null]
+@param {String} $property [null]
+@param {String} $value [null]
+*/
+/*
+GENERATE GAPS BETWEEN UNITS
+*/
+/*
+@param {String} $breakpoint
+@param {String} $gap
+@param {String} $modifier [null]
+*/
+/*
+@param {String} $breakpoint
+@param {String} $gap
+@param {String} $modifier [null]
+*/
