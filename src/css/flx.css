@@ -1,3 +1,24 @@
+/* Base */
+/* Layout */
+/**
+ * $size - number in pixels, eg. 541px
+ */
+/**
+ * $size - number in pixels, eg. 541px
+ */
+/* Do not use the $size-x variables directly in partials, use to create specific variables instead */
+/* Use for paddings and margins */
+/* Use for widths on elements */
+/* Use for (min-)heights on elements */
+/* The maximum size for the layout */
+/* Do not use the $size-x variables directly in partials, use to create specific variables instead */
+/* Use for paddings and margins */
+/* Use for widths on elements */
+/* Use for (min-)heights on elements */
+/**
+@param {String} $property [null]
+@param {String} $value [null]
+ */
 /*
 @param {String} $type
 @param {String} $breakpoint [null]
@@ -467,3 +488,88 @@ GENERATE GAPS BETWEEN UNITS
 @param {String} $gap
 @param {String} $modifier [null]
 */
+
+@media only screen and (min-width: 668px) {
+  /*
+  GENERATE FLEX UNIT PROPERTIES
+  */
+  [class*='flex-unit-m--align-self--flex-start'] {
+    align-self: flex-start;
+  }
+  [class*='flex-unit-m--flex--0-0-auto'] {
+    flex: 0 0 auto;
+  }
+  [class*='flex-unit-m--order--0'] {
+    order: 0;
+  }
+  [class*='flex-unit-m--order--1'] {
+    order: 1;
+  }
+  [class*='flex-unit-m--order--2'] {
+    order: 2;
+  }
+  [class*='flex-unit-m--flex--1-0-0'] {
+    flex: 1 0 0;
+  }
+  [class*='flex-unit-m--flex--1-1-auto'] {
+    flex: 1 1 auto;
+  }
+  /*
+  GENERATE GAPS BETWEEN UNITS
+  */
+  .flex-container-m--gap-2--x {
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
+  }
+  .flex-container-m--gap-2--x > [class*='flex-unit'] {
+    padding: 0 0.4rem;
+  }
+  .flex-container-m--gap-0--y {
+    margin-top: 0;
+  }
+  .flex-container-m--gap-0--y > [class*='flex-unit'] {
+    margin-top: 0;
+  }
+  .flex-container-m--gap-5--y {
+    margin-top: -2rem;
+  }
+  .flex-container-m--gap-5--y > [class*='flex-unit'] {
+    margin-top: 2rem;
+  }
+  /*
+  GENERATE FLEX CONTAINER DIRECTIONS
+  */
+  [class*='flex-container-m--flex-direction--row'] {
+    flex-direction: row;
+  }
+  [class*='flex-container-m--justify-content--flex-end'] {
+    justify-content: flex-end;
+  }
+  [class*='flex-container-m--flex-direction--column'] {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  /*
+  GENERATE FLEX CONTAINER DIRECTIONS
+  */
+  [class*='flex-container-l--flex-direction--row'] {
+    flex-direction: row;
+  }
+  [class*='flex-container-l--flex-direction--row-reverse'] {
+    flex-direction: row-reverse;
+  }
+  [class*='flex-container-l--justify-content--space-between'] {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /*
+  GENERATE FLEX CONTAINER PROPERTIES
+  */
+  [class*='flex-container-xl--justify-content--flex-end'] {
+    justify-content: flex-end;
+  }
+}
